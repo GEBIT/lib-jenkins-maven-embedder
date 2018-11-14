@@ -20,22 +20,6 @@ package hudson.maven;
  * under the License.
  */
 
-import java.io.Closeable;
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.JarURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.Enumeration;
-import java.util.Properties;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
-import javax.annotation.CheckForNull;
-import javax.annotation.Nonnull;
-
 import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.apache.tools.ant.AntClassLoader;
 import org.codehaus.plexus.ContainerConfiguration;
@@ -45,8 +29,19 @@ import org.codehaus.plexus.PlexusContainer;
 import org.codehaus.plexus.PlexusContainerException;
 import org.codehaus.plexus.classworlds.ClassWorld;
 import org.codehaus.plexus.classworlds.realm.ClassRealm;
-import org.codehaus.plexus.util.IOUtil;
 
+import javax.annotation.CheckForNull;
+import javax.annotation.Nonnull;
+import java.io.Closeable;
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.Enumeration;
+import java.util.Properties;
 
 /**
  * @author Olivier Lamy
