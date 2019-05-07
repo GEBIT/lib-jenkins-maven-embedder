@@ -76,7 +76,7 @@ public class TestMavenEmbedderSimpleProject extends TestCase {
         
         mavenRequest.setExecutionListener( listener );
         
-        //mavenRequest.setBaseDirectory( new File( "src/test/projects-tests/scm-git-test-one-module" ).getAbsolutePath() );
+        mavenRequest.setBaseDirectory( new File( "src/test/projects-tests/one-module" ).getAbsolutePath() );
         MavenEmbedder mavenEmbedder = new MavenEmbedder( new File( System.getProperty( "maven.home" ) ), mavenRequest );
         
         MavenExecutionResult result = mavenEmbedder.execute( mavenRequest );
