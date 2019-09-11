@@ -29,7 +29,7 @@ under the License.
   <artifactId>lib-jenkins-maven-embedder</artifactId>
   <name>Jenkins Maven Embedder</name>
   <description>Library for Jenkins plugins and other components, which allows embedding Maven into their logic</description>
-  <version>3.14</version>
+  <version>3.14-gebit1</version>
 
   <licenses>
     <license>
@@ -223,7 +223,7 @@ under the License.
       <artifactId>log4j-slf4j-impl</artifactId>
       <version>2.8</version>
       <scope>test</scope>
-    </dependency>    
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
